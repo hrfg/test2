@@ -14,13 +14,13 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['url', 'username', 'email', 'groups']
 
 
-class menuSerializer(serializers.ModelSerializer):
+class MenuSerializer(serializers.ModelSerializer):
     class Meta:
         model = Menu
         fields = '__all__'
 
 
-class bookingSerializer(serializers.ModelSerializer):
+class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = '__all__'
